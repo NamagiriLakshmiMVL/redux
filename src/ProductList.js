@@ -4,12 +4,13 @@ import Product from "./Product";
 import { useDispatch } from 'react-redux';
 import { Button } from '@mui/material';
 import { addItem } from "./CartSlice";
+import { useNavigate } from "react-router-dom";
 
 
 function ProductList(){
-  const dispatch = useDispatch()
-    const productList = PRODUCT_LIST;
-   
+  const dispatch = useDispatch()                     //declaring dispatch
+  const productList = PRODUCT_LIST;
+   const navigate = useNavigate()
     const handleCart = (product) => {
        dispatch(addItem(product))
       };

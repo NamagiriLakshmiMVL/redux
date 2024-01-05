@@ -11,9 +11,6 @@ export function Cart() {
 
 const dispatch = useDispatch()
 const cartItems = useSelector((store) => store.cart.items)
-//console.log(cartItems[0].quantity)
-
-
 
     const handleDec = (cartItem) => {
        

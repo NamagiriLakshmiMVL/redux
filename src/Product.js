@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconButton} from "@mui/material";
+import { IconButton } from "@mui/material";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InfoIcon from '@mui/icons-material/Info';
@@ -7,13 +7,11 @@ import InfoIcon from '@mui/icons-material/Info';
 
 function Product({ id, product, onAddCart }) {
     const [show, setShow] = useState(true);
-
-
     const styles = {
 
         color: product.rating > 4.5 ? "green" : "red"
     };
-    
+
 
     return (
 
@@ -33,7 +31,7 @@ function Product({ id, product, onAddCart }) {
             {show ? <p className='product-summary'>{product.description}</p> : null}
             <div className='priceStyle'>
                 <p className='product-price'>Price: {product.price}</p>
-            {onAddCart}
+                {onAddCart}
 
             </div>
 

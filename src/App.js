@@ -6,6 +6,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Cart from './Cart';
 import Header from './Header';
+import { IconButton } from '@mui/material';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useSelector } from 'react-redux';
 
 export const PRODUCT_LIST = [
   {
@@ -105,7 +108,7 @@ export const PRODUCT_LIST = [
 
 
 function App() {
-
+const cart = useSelector((store)=>store.cart.items)
   const navigate = useNavigate()
 
   return (
@@ -117,7 +120,9 @@ function App() {
               
               <Button color="inherit" onClick={() => navigate("/")}>ProductList</Button>
 
-              <Button color="inherit" onClick={() => navigate("/cart")}>Cart Page</Button>
+              <Button color="inherit" onClick={() => navigate("/cart")}>Cart ({cart.length})  <IconButton>
+                <ShoppingCartIcon />
+              </IconButton></Button>
             </Toolbar>
           </AppBar>
           <Routes>
