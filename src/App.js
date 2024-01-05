@@ -5,8 +5,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Cart from './Cart';
-import { ContextProvider } from './Context1';
-import { UserProvider } from './Context';
 import Header from './Header';
 
 export const PRODUCT_LIST = [
@@ -113,8 +111,7 @@ function App() {
   return (
     <div>
       <Header />
-      <ContextProvider >
-        <UserProvider>
+    
           <AppBar position="static" >
             <Toolbar >
               
@@ -128,8 +125,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
 
-        </UserProvider>
-      </ContextProvider >
+        
     </div>
 
   );

@@ -6,29 +6,25 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { IconButton } from "@mui/material";
 import { useDispatch,useSelector } from "react-redux";
-import { deleteExp } from "./CartSlice";
+import { deleteExp,decreaseCart,increaseCart } from "./CartSlice";
 export function Cart() {
 
 const dispatch = useDispatch()
 const cartItems = useSelector((store) => store.cart.items)
-console.log(cartItems)
+//console.log(cartItems[0].quantity)
 
 
 
-    const handleDec = (cartid) => {
+    const handleDec = (cartItem) => {
        
-            {cartItems.map((item) => cartid === item.id ? { ...item, quantity: item.quantity - 1 } : item
-            )}
-        
+        dispatch(decreaseCart(cartItem))
 
     };
 
-    const handleInc = (cartid) => {
+    const handleInc = (cartItem) => {
       
-            {cartItems.map((item) => {
-                return cartid === item.id ? { ...item, quantity: item.quantity + 1 } : item
-            })}
-        
+           
+        dispatch(increaseCart(cartItem))
 
     };
 
@@ -38,15 +34,15 @@ console.log(cartItems)
 
    
 
-    const handleRemove = (id) => {
-        dispatch(deleteExp(id))
+    const handleRemove = (cartItem) => {
+       dispatch(deleteExp(cartItem))
 
     }
     return (
         <div>
             <h1 style={{ textAlign: "center" }}>Cart Page</h1>
 
-            {cartItems.map((item) => {
+            {cartItems.map((item,index) => {
 
                 totalPrice += item.quantity * item.price
                 return (
@@ -72,9 +68,9 @@ console.log(cartItems)
                                 <div className="cart-price">
                                     <div className="count">
                                         <div>
-                                            <Button variant="text" onClick={() => handleDec(item.id)}><RemoveIcon /></Button>
+                                            <Button variant="text" onClick={() => handleDec(item)}><RemoveIcon /></Button>
                                             {item.quantity}
-                                            <Button variant="text" onClick={() => handleInc(item.id)}><AddIcon /></Button>
+                                            <Button variant="text" onClick={() => handleInc(item)}><AddIcon /></Button>
 
 
                                         </div>
@@ -84,7 +80,7 @@ console.log(cartItems)
                                 </div>
 
                                 <div className="Remove">
-                                    <Button variant="text" onClick={() => handleRemove(item.id)}>REMOVE</Button>
+                                    <Button variant="text" onClick={() => handleRemove(item)}>REMOVE</Button>
                                 </div>
                             </div>
 
