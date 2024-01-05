@@ -1,0 +1,147 @@
+.header {
+  text-align: center;
+}
+body{
+  background-color: aquamarine;
+}
+.product-container {
+  width: 300px;
+  background-color: lightyellow;
+  margin-top: 50px;
+  height: 600px;
+border-radius: 10px;
+border: 1px solid black;
+  padding: 10px 30px;
+}
+
+.product-poster {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product-spec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-summary {
+  margin-top: 0px;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.priceStyle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.product-rating {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-product-form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-name,
+.product-rating {
+  font-size: 25px;
+}
+
+.img-div {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.cart-detail {
+  font-size: 5px;
+}
+
+.cart-price {
+  display: flex;
+  align-items: center;
+}
+
+.first-div {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Remove {
+  margin-top: 80px;
+  margin-left: 0px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+
+
+}
+
+.Subtotal {
+  display: flex;
+  align-items: center;
+  gap: 277px;
+  margin-left: 260px;
+  margin-top: -20px;
+
+}
+
+.totalamt {
+  margin-top: 50px;
+  margin-left: 645px;
+  display: flex;
+  gap: 220px;
+  color: darkred;
+  border: 1px solid white;
+  width: fit-content;
+  background-color: lightseagreen;
+  padding: 0px 25px;
+}
+
+.root {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: fit-content;
+  gap: 5px;
+  align-content: center;
+  background-color: lightgrey;
+  margin-left: 280px;
+}
