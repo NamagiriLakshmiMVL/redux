@@ -22,7 +22,7 @@ export const PRODUCT_LIST = [
     "stock": 94,
     "brand": "Apple",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/I/61Cu-EN6F5L._AC_UY327_FMwebp_QL65_.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/1/1.jpg",
       "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -42,7 +42,7 @@ export const PRODUCT_LIST = [
     "quantity": 0,
     "brand": "Apple",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/I/61xMF4RwVcL._AC_UY327_FMwebp_QL65_.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/2/1.jpg",
       "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -61,7 +61,7 @@ export const PRODUCT_LIST = [
     "stock": 36,
     "brand": "Samsung",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/I/41U5jJ9rkeL._SX300_SY300_QL70_FMwebp_.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/3/1.jpg"
     ]
@@ -77,7 +77,7 @@ export const PRODUCT_LIST = [
     "stock": 123,
     "brand": "OPPO",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/I/41Z4OkznV9S._SX300_SY300_QL70_FMwebp_.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/4/1.jpg",
       "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -97,7 +97,7 @@ export const PRODUCT_LIST = [
     "quantity": 0,
     "brand": "Huawei",
     "category": "smartphones",
-    "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/I/61jJeZBliWL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
